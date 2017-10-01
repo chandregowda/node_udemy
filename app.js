@@ -5,7 +5,7 @@ const fs = require('fs');
 /** 
  * Consts used in application
  */
-const PORT = 3000;
+const PORT = process.env.PORT || 3000; // This will be set by Heroku
 const LOG_FILE = "server.log";
 const LOG_FILE_PATH = __dirname + "/" + LOG_FILE;
 
